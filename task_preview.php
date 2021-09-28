@@ -32,7 +32,13 @@ include('./functions.php');
             <div class="preview__header">
               <span><?php echo $list->name; ?></span>
               <div class="preview__option">
-                <span>状況：<?php echo $list->state; ?></span>
+                <span>状況：
+                  <?php if ($list->state == 1) :?>
+                    未着手
+                  <?php elseif ($list->state == 2) : ?>
+                    着手
+                  <?php endif; ?>
+                </span>
                 <span>期日：<?php echo $list->due_date; ?></span>
               </div><!-- /.preview__option -->
             </div><!-- /.preview__header -->
