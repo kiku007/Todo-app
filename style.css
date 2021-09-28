@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.top .top__wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.task_preview .page_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;  
+}
+
+.task_preview .page_header h1 {
+  margin: 0;
+}
+
+.btn-common {
+  padding: .5rem 2rem;
+}
+
+.category-group {
+  margin-top: 3rem;
+}
+
+.wrapper-inner {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.task_preview .preview {
+  border-bottom: 1px solid;
+}
+
+.task_preview .preview__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.task_preview .preview__header span {
+  padding: 0 5rem;
+}
+
+.task_preview .preview__content {
+  width: 700px;
+  margin: 0 auto;
+  padding: 2rem 0 1rem;
+}
+
+.page-title {
+  margin: 5rem 0;
+}
+
+.form-wrapper {
+  font-size: 1.8rem;
+}
+
+.form-wrapper div {
+  margin-bottom: 2rem;
+}
+
+.form-wrapper label {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.form-wrapper input, textarea, select {
+  width: 60%;
+  padding: 1rem;
+  border-radius: 6px;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 2px solid #aaa;
+  border-bottom: 2px solid #aaa;
+  background-color: #CEE6EB;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group .btn-common{
+  width: 30%;
+  margin-top: 5rem;
+}
+
+.form-category {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-category div {
+  width: 30%;
+}
+
+.category-register {
+  margin-top: 5rem;
+}
+
+.category-register form input[type="text"] {
+  width: 60%;
+  margin-right: 8rem;
+}
+.category-register form input[type="submit"] {
+  width: 20%;
+}
+
+.success {
+  font-size: 2rem;
+  color: royalblue;
+}
+
+.error_message {
+  font-size: 2rem;
+  color: red;
+}
