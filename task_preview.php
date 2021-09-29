@@ -26,25 +26,27 @@ include('./functions.php');
     </div><!-- /.page_header -->
     <?php foreach ($lists_all as $list) : ?>
       <div class="category-group">
-        <h2><?php echo $list->category; ?></h2>
+        <h2><?php echo h($list->category); ?></h2>
         <div class="wrapper-inner">
           <div class="preview">
-            <div class="preview__header">
-              <span><?php echo $list->name; ?></span>
-              <div class="preview__option">
-                <span>状況：
-                  <?php if ($list->state == 1) :?>
-                    未着手
-                  <?php elseif ($list->state == 2) : ?>
-                    着手
-                  <?php endif; ?>
-                </span>
-                <span>期日：<?php echo $list->due_date; ?></span>
-              </div><!-- /.preview__option -->
-            </div><!-- /.preview__header -->
-            <div class="preview__content">
-              <?php echo $list->description; ?>
-            </div><!-- /.preview__content -->
+            <a href="./task_edit.php?task_id=<?php echo $list->id; ?>">
+              <div class="preview__header">
+                <span><?php echo h($list->name); ?></span>
+                <div class="preview__option">
+                  <span>状況：
+                    <?php if ($list->state == 1) : ?>
+                      未着手
+                    <?php elseif ($list->state == 2) : ?>
+                      着手
+                    <?php endif; ?>
+                  </span>
+                  <span>期日：<?php echo h($list->due_date); ?></span>
+                </div><!-- /.preview__option -->
+              </div><!-- /.preview__header -->
+              <div class="preview__content">
+                <?php echo nl2br($list->description); ?>
+              </div><!-- /.preview__content -->
+            </a>
           </div><!-- /.preview -->
         </div><!-- /.wrapper-inner -->
       </div><!-- /.category-group -->
