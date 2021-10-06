@@ -38,3 +38,4 @@ SELECT tasks.name AS name, description, state, categories.name AS category, due_
 DELETE FROM tasks WHERE id = 35;
 
 ALTER TABLE `tasks` auto_increment = 1;
+ALTER TABLE `categories` auto_increment = 1;

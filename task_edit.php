@@ -3,7 +3,6 @@ include('./header.php');
 include('./functions.php');
 
 $update_data = upDate_Preview($pdo);
-var_dump($update_data);
 ?>
 
 <body class="task_edit">

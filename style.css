@@ -30,8 +30,20 @@ img {
 }
 
 .top .top__wrapper {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20rem;
+}
+
+.top .top__wrapper h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.top .top__wrapper input {
+  padding: 1rem 3rem;
 }
 
 .wrapper {
@@ -82,6 +94,15 @@ img {
   width: 700px;
   margin: 0 auto;
   padding: 2rem 0 1rem;
+}
+
+.task_preview .preview a {
+  display: block;
+  padding: 1.5rem;
+}
+
+.task_preview .preview a:hover {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
 }
 
 .page-title {
@@ -153,3 +174,8 @@ img {
   font-size: 2rem;
   color: red;
 }
+
+/* .task_preview .category1:nth-child(n + 1) h2 {
+  display: none;
+} */
+

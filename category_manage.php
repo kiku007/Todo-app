@@ -29,10 +29,10 @@ include('./header.php');
         </div>
       </div><!-- /.form-wrapper -->
       <div class="form-wrapper category-register">
-        <form action="/form.php" method="post">
+        <form action="./task_preview.php" method="post">
           <div>
             <input type="text" name="category-register">
-            <input type="submit" value="登録">
+            <input type="submit" value="登録" name="btn_cat_submit">
           </div>
         </form>
       </div><!-- /.form-wrapper -->

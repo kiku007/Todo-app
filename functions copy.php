@@ -3,7 +3,9 @@
 $success_message = null;
 $error_messages = [];
 
-include('./config.php');
+define('DSN', 'mysql:host=localhost;dbname=taskdb;charset=utf8mb4');
+define('DB_USER', 'root');
+define('DB_PASS', 'root');
 
 function getdbAccess() {
   try {
