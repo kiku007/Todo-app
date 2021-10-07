@@ -38,7 +38,6 @@ include('./functions.php');
         </form>
       </div><!-- /.form-wrapper -->
     </div><!-- /.wrapper-inner -->
-
   </div><!-- /.wrapper -->
 
 </body>
