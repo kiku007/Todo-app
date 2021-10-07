@@ -41,8 +41,6 @@ include('./functions.php');
 
   </div><!-- /.wrapper -->
 
-
-
 </body>
 
 </html>
